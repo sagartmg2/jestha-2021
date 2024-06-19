@@ -1,0 +1,15 @@
+copy line below 
+alt + shift + downArrow 
+
+change desktop tabs
+alt + tab 
+
+vs code setting
+ctlr + shift + p
+
+
+move cursor to bottom line
+ctrl + enter
+
+comment
+ctrl + /
