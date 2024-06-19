@@ -10,4 +10,8 @@ Initial one time setup per project
 Daily use
 1. > git status (optional)
 2. > git add . 
+   > git add <fileName>
+    eg: > git add index.html
+3. > git commit -m "html-css-js"
+4. > git push
 
