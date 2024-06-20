@@ -15,3 +15,11 @@ Daily use
 3. > git commit -m "html-css-js"
 4. > git push
 
+
+clone & 
+pull
+
+
+git clone <repo url>
+eg: git clone https://github.com/sagartmg2/jestha-2021
+eg: git clone https://github.com/sagartmg2/jestha-2021/master  <-- wrong
