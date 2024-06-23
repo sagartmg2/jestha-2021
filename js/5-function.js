@@ -17,6 +17,11 @@ console.log(users[0].name + "'s phone is " + users[0].phone)
 console.log(users[1].name + "'s phone is " + users[1].phone)
 console.log(users[2].name + "'s phone is " + users[2].phone)
 
+// printUserInfo(0)
+// printUserInfo(1)
+// printUserInfo(2)
+// printUserInfo(3)
+
 /* research: template literal / string literal  */
 
 /* 

@@ -58,6 +58,7 @@ console.log(10 <= 10)
 console.log("sita" == "sita")
 console.log("Sita" == "sita")
 console.log("male " == "male")
+console.log("female" == "female")
 
 
 let count = 0
