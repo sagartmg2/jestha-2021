@@ -9,6 +9,7 @@ for (let index = 0; index < users.length; index++) {
   console.log(`in index ${index} , ${users[index]}`)
 }
 
+
 let persons = [
   { name: "ram", age: 10, gender: "male" },
   { name: "shyam", age: 20, gender: "male" },
