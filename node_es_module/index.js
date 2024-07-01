@@ -1,4 +1,5 @@
-const fs = require("fs")
+// const fs = require("fs")
+import fs from "fs"
 
 /* global objects 
     console.log
@@ -20,17 +21,20 @@ const fs = require("fs")
 
 console.log("connected: node > ide.js")
 // document.getElementsByTagName("h1")[0].style.color = "Red"
-console.log(__filename)
-console.log(__dirname)
+// console.log(__filename)
+// console.log(__dirname)
 
-const signup = require("./auth")
+// const signup = require("./auth")
+import signup from "./auth.js"
 
 signup("ram", "secret")
 signup("shyam", "secret")
 signup("sita", "secret")
 
 
-const product = require("./product")
+// const product = require("./product")
+import product from "./product.js"
+
 // const product = { getProduct: fn , editProduct :fn, ......}
 
 product.getProducts()
@@ -39,8 +43,8 @@ product.deleteProduct()
 product.custom()
 
 
-const { getProducts, editProduct, deleteProduct } = require("./product")
-
+// const { getProducts, editProduct, deleteProduct } = require("./product")
+import  { getProducts, editProduct, deleteProduct }  from "./product.js"
 getProducts()
 editProduct()
 
