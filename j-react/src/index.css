@@ -1,0 +1,16 @@
+.product{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.product-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product-price{
+    text-align: center;
+}
