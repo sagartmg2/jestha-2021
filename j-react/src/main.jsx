@@ -1,38 +1,43 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
+import Product,{FeaturedProduct} from "./components/Product"
+
+let title = "products list"
+let products= [
+  {
+    title:'mobile',
+    price:10000,
+    discountedPrice:9000,
+    description:"fasdf lroeam .. asdfadsfasdf lroeam .. asdfadsfasdf lroeam .. asdfads"
+  },
+  {
+    title:'watch',
+    price:10000,
+    discountedPrice:9000,
+    description:"fasdf lroeam .. asdfadsfasdf lroeam .. asdfadsfasdf lroeam .. asdfads"
+  },
+  {
+    title:'keyboard',
+    price:1000,
+    discountedPrice:900,
+    description:"fasdf lroeam .. asdfadsfasdf lroeam .. asdfadsfasdf lroeam .. asdfads"
+  },
+]
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <h1>Products</h1>
+    <h1>{title}</h1>
+    <img src="" alt=""/>
     <hr />
-    <div className="product">
-      <p className="product-title">Watch</p>
-      <p class="product-price">Rs:1000</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam esse tempore consectetur temporibus voluptatum laboriosam quasi labore
-        mollitia molestias ea, recusandae ipsum numquam accusamus magnam ducimus inventore, nam doloribus.
-      </p>
-    </div>
-    <div className="product">
-      <p className="product-title">Mouse</p>
-      <p class="product-price">Rs:1000</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam esse tempore consectetur temporibus voluptatum laboriosam quasi labore
-        mollitia molestias ea, recusandae ipsum numquam accusamus magnam ducimus inventore, nam doloribus.
-      </p>
-    </div>
-    <div className="product">
-      <p className="product-title">Keyboard</p>
-      <p class="product-price">Rs:1000</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam esse tempore consectetur temporibus voluptatum laboriosam quasi labore
-        mollitia molestias ea, recusandae ipsum numquam accusamus magnam ducimus inventore, nam doloribus.
-      </p>
-    </div>
+    {/* Product(watch,1000,descrption) */}
+    <Product title="watch" price="100"  description="afasdf lroeam .. asdfadsf .. " />
+    <Product title="keyboard" price="100" description="afasdf lroeam .. asdfadsf .. " />
+    <Product title="mouse" price="300" />
+    <FeaturedProduct/>
   </React.StrictMode>
 )
-
 
 /* 
   reserach : Component in react : simply a function which return html code
