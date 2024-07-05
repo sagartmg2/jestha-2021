@@ -12,6 +12,7 @@ function Product(props) {
       categories: one, two
       <p>{props.description}</p>
     </div>
+     
   )
 }
 export default Product

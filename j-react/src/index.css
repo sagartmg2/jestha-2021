@@ -22,3 +22,11 @@
     text-decoration: line-through;
 }
 
+table{
+    border-collapse: collapse ;
+}
+th,td{
+    border: 1px solid;
+    padding: .5rem 1rem;
+}
+
