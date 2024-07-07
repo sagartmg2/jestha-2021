@@ -30,3 +30,7 @@ th,td{
     padding: .5rem 1rem;
 }
 
+.dark{
+    background-color: #333;
+    color:whitesmoke;
+}

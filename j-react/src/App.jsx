@@ -1,10 +1,16 @@
+import Counter from "./Counter"
 import ProductList from "./ProductList"
+import Theme from "./Theme"
 import Todos from "./Todos"
 function App() {
   return (
     <>
-      <Todos />
-      <ProductList />
+      <Counter />
+      <br/>
+      <br/>
+      <Theme/>
+      {/* <Todos />
+      <ProductList /> */}
     </>
   )
 }

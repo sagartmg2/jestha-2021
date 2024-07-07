@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Count: <span id="count">100</span></h1>
+    <button onclick="increment()" id="btn">increment</button>
+
+    <script>
+      // document.getElementById("btn").addEventListener("click",increment)
+      let value = 99
+      document.getElementById("count").innerText = value
+
+      function increment() {
+        value++
+        document.getElementById("count").innerText = value
+      }
+    </script>
+  </body>
+</html>

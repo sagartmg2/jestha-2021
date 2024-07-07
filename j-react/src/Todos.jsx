@@ -3,17 +3,17 @@ let todos = [
   {
     title: "html",
     status: true,
-    user:"ram"
+    user: "ram",
   },
   {
     title: "css",
     status: true,
-    user:"ram"
+    user: "ram",
   },
   {
     title: "js",
     status: true,
-    user:"ram"
+    user: "ram",
   },
   {
     title: "react",
@@ -29,8 +29,12 @@ export default function Todos() {
       <h1>Todos</h1>
       {/* { JSON.stringify(todoslist) } */}
       <ul>
-        {todos.map((el,index) => {
-          return <li key={index}>{el.title} ({el.status ? "true" : "false" }) </li>
+        {todos.map((el, index) => {
+          return (
+            <li key={index}>
+              {el.title} ({el.status ? "true" : "false"}){" "}
+            </li>
+          )
         })}
       </ul>
 
@@ -39,14 +43,19 @@ export default function Todos() {
           <tr>
             <th>title</th>
             <th>status</th>
+            <th>user</th>
           </tr>
         </thead>
         <tbody>
-          {todos.map((el,index) => {
+          {todos.map((el, index) => {
             return (
               <tr key={index}>
-                <td>{el.title}</td>
-                <td>{el.status ? "✔" :"❌" }</td>
+                <td>
+                  {el.title} {el.user ? `( ${el.user})` : ""}{" "}
+                </td>
+                <td>{el.status ? "✔" : "❌"}</td>
+                {/* <td>{el.user ? el.user: "-" }</td> */}
+                <td>{el.user ? <span> {el.user}</span> : <span> -</span>}</td>
               </tr>
             )
           })}
