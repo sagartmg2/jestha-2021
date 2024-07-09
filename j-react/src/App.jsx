@@ -1,14 +1,17 @@
 import Counter from "./Counter"
+import GoogleTabs from "./GoogleTabs"
 import ProductList from "./ProductList"
 import Theme from "./Theme"
 import Todos from "./Todos"
 function App() {
   return (
     <>
-      <Counter />
-      <br/>
-      <br/>
-      <Theme/>
+      <GoogleTabs />
+      <br />
+      {/* <Counter />
+      <br />
+      <br />
+      <Theme /> */}
       {/* <Todos />
       <ProductList /> */}
     </>
